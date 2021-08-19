@@ -1,0 +1,78 @@
+body{
+    margin: 0px;
+    padding: 0px;
+   background-image: linear-gradient(120deg, rgba(245, 248, 45, 0.897),rgb(255, 136, 0));
+}
+header{
+    font-size: 1.5rem;
+    color: white;
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+header,#maindiv{
+    display: flex;
+    justify-content: center;
+}
+input, .todo-btn{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+    transition: all 1s ease;
+    outline: none;
+}
+.todo-btn{
+    color: rgb(31, 18, 31);
+    background: rgb(112, 92, 112);
+}
+.todo-btn:hover{
+    background: violet;
+    cursor: pointer;
+}
+button.completed {background: none;border: none; cursor: pointer;}
+
+li.itemli {
+    list-style: none;
+    font-size: 20px;
+    font-family: monospace;
+    padding-left: 5px;
+}
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    height: 42px;
+    background: white;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.todo li{
+    flex: 1;
+}
+
+
+i.fas.fa-check-square {
+    font-size: 36px;
+    color: green;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+i.fas.fa-trash {
+    font-size: 30px;
+    color: #bf0000;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+button.trash {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.complete{
+    text-decoration: line-through;
+    opacity: 0.5;
+    color:black
+}
