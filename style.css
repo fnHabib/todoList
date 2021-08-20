@@ -12,6 +12,7 @@ header{
 header,#maindiv{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 input, .todo-btn{
     padding: 0.5rem;
@@ -46,6 +47,7 @@ li.itemli {
     background: white;
     align-items: center;
     margin-bottom: 5px;
+    transition: all 1s ease;
 }
 .todo li{
     flex: 1;
@@ -75,4 +77,34 @@ button.trash {
     text-decoration: line-through;
     opacity: 0.5;
     color:black
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+select{
+  outline: none;
+  appearance: none;
+  border: none;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+select{
+    color: rgb(240, 198, 10);
+    width: 10rem;
+    cursor:pointer;
+    padding: 1rem;
+}
+.select::after{
+    content: "\25BC";
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    color: rgb(240, 198, 10);
+    cursor: pointer;
+    pointer-events: none;
+    padding: 1rem;
 }
